@@ -11,17 +11,17 @@ public class MarcaProduto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_marca_produto")
-    private Long id;
+    private Long id_marca_produto;
 
     private String nomeDesc;
 
 
     public long getId() {
-        return id;
+        return id_marca_produto;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setId(long id_marca_produto) {
+        this.id_marca_produto = id_marca_produto;
     }
 
     public String getNomeDesc() {
