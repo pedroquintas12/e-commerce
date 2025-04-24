@@ -9,11 +9,10 @@ import java.util.Objects;
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-@SequenceGenerator(name = "seq_pessoa", sequenceName = "seq_pessoa", allocationSize = 1, initialValue = 1)
 public abstract class Pessoa implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_pessoa")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_pessoa;
 
     private String nome;

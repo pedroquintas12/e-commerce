@@ -7,11 +7,11 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@SequenceGenerator(name = "seq_Endereco", sequenceName = "seq_Endereco", allocationSize = 1, initialValue = 1)
-public abstract class Endereco implements Serializable {
+@Table(name = "endereco")
+public class Endereco implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_Endereco")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_endereco;
 
     private String ruaLogra;
