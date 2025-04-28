@@ -13,6 +13,7 @@ public class ItemVendaLoja implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_item_venda_loja;
 
+    @Column(nullable = false)
     private Double quantidade;
 
     @ManyToOne

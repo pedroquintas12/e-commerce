@@ -15,12 +15,14 @@ public class CupDesc implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_cup_desc;
 
+    @Column(nullable = false)
     private String codDesc;
 
     private BigDecimal valorRealDesc;
 
     private BigDecimal valorPorcentDescricao;
 
+    @Column(nullable = false)
     @Temporal(TemporalType.DATE)
     private Date dataValidadeCupom;
 

@@ -12,6 +12,7 @@ public class MarcaProduto implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_marca_produto;
 
+    @Column(nullable = false)
     private String nomeDesc;
 
 

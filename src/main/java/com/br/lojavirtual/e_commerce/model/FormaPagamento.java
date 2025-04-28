@@ -13,6 +13,7 @@ public class FormaPagamento implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID_formato_pagamento;
 
+    @Column(nullable = false)
     private String descricao;
 
 

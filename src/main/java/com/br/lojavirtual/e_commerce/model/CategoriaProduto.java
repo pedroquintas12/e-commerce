@@ -13,6 +13,7 @@ public class CategoriaProduto implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_categoria_produto;
 
+    @Column(nullable = false)
     private String nomeDesc;
 
 

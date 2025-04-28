@@ -14,10 +14,10 @@ public class ImagemProduto implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_imagem;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "TEXT" ,nullable = false)
     private String imagemOriginal;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String imagemMiniatura;
 
     @ManyToOne

@@ -13,9 +13,10 @@ public class AvaliacaoProduto implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_avaliacao_produto;
 
+    @Column(nullable = false)
     private Integer nota;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String descricao;
 
     @ManyToOne(targetEntity = Pessoa.class)
